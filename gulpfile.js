@@ -71,5 +71,6 @@ gulp.task("watch", function () {
 gulp.task("default", [
     "swig",
     "sass",
-    "img"
+    "img",
+    "js"
 ]);
