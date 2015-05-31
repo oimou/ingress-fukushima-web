@@ -27,11 +27,11 @@
 2. `src/layout/base.html`にbaseタグを記述したhtmlを配置してください
 
     ```
-        <base href="http://localhost:8000/">
+        <base href="http://localhost:3000/">
     ```
 
 3. `tool/gulp-watch` を実行して、開発を開始してください
-    * [http://localhost:8000/](http://localhost:8000/)にアクセスするとページを表示できます
+    * [http://localhost:3000/](http://localhost:3000/)にアクセスするとページを表示できます
     * `tool/gulp-watch` 実行中は、 `src` ディレクトリ内のファイルの変更が監視されています
     * `src` ディレクトリ内のファイルを編集すると、自動でコンパイルされて `dist` ディレクトリ内に配置されます
     * 実行中にエラーが発生した場合は、実行中の `tool/gulp-watch` を終了し、再度実行してみてください
