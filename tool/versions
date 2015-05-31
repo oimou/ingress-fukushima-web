@@ -1,0 +1,19 @@
+#!/bin/bash
+DIR=$(cd $(dirname $0); pwd)
+cd $DIR/../
+
+echo "=== VERSION INFO ==="
+
+echo "* node"
+node -v
+
+echo "* npm"
+npm -v
+
+echo "* bower"
+./node_modules/.bin/bower -v
+
+echo "* gulp"
+./node_modules/.bin/gulp -v
+
+echo "===================="

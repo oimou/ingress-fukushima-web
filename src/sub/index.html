@@ -1,0 +1,42 @@
+{% extends '../layout/layout.html' %}
+
+
+
+{#
+    このページのmetaタグを入れるブロック(optional)
+#}
+{% block meta %}
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="タイトル">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://example.com">
+    <meta property="og:image" content="http://example.com/og_image.png">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="" />
+{% endblock %}
+
+
+
+{#
+    このページのタイトルを入れるブロック(optional)
+#}
+{% block title %}
+    <title>下層ページタイトルが入ります</title>
+{% endblock %}
+
+
+
+{#
+    このページのコンテンツを入れるブロック(optional)
+#}
+{% block body %}
+    <div class="container">
+        <h1>下層ページダミーテキストが入ります</h1>
+
+        <p class="lead">
+            下層ページダミーテキストが入ります。
+        </p>
+    </div>
+{% endblock %}
