@@ -1,3 +1,203 @@
+@import "_variables.scss";
+
 body {
-    background: #bff;
+  background-color: white;
+  font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 1.7rem;
+
 }
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 16px;
+	color: $main-color;
+	margin: 20px 0;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h2, h3, h4, h5 {
+	font-weight: 700;
+}
+
+p {
+	font-size: 14px;
+	color: $main-color;
+	padding: 5px 20px;
+	margin: 20px 0;
+	line-height: 1.8em;
+}
+
+
+blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
+label { color: #777; }
+.thin { font-weight:300; }
+.page-title { margin-top:20px; font-weight:300; }
+.text-muted { color:#888; }
+.breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }
+ul.list-spaces li{ margin-bottom:10px; }
+
+
+/* Header */
+#head {
+	background:#181015 
+	url(../img/img-main1.png) no-repeat; 
+	background-size: cover; min-height:520px; 
+	text-align: center; padding-top:240px; 
+	color:white; 
+	font-family:"Open sans", Helvetica, Arial; font-weight:300; 
+
+	.secondary { 
+		height:100px; 
+		min-height: 100px; 
+		padding-top:0px; 
+	}
+
+	.lead { 
+		font-family:"Open sans", Helvetica, Arial; 
+		font-size:44px;
+		margin-bottom:6px; 
+		color:white; 
+		line-height:1.15em; 
+	} 
+
+	.tagline { 
+		color:rgba(255,255,255,0.75); 
+		margin-bottom:25px; 
+
+		& a{
+			color:#fff;
+		}
+	}
+
+	.btn { 
+		margin-bottom:10px;
+	}
+
+	.btn-default { 
+		text-shadow: none; 
+		background:transparent; 
+		color:rgba(255,255,255,.5); 
+		-webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); 
+		-moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); 
+		box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); 
+		background: transparent; 
+	}
+
+	.btn-default:hover,
+	.btn-default:focus { 
+		color:rgba(255,255,255,.8); 
+		-webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); 
+		-moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8);
+		box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); 
+		background: transparent; 
+	}
+
+	.btn-default:active, 
+	.btn-default.active { 
+		color:#fff; 
+		-webkit-box-shadow:inset 0px 0px 0px 3px #fff; 
+		-moz-box-shadow:inset 0px 0px 0px 3px #fff; 
+		box-shadow:inset 0px 0px 0px 3px #fff; 
+		background: transparent; 
+	}
+}
+
+@media (max-width: 767px) {
+	#head { 
+		min-height:420px; 
+		padding-top:160px;
+
+		.lead {
+		font-size: 34px; 
+		}
+	}
+}
+
+/* Autohide navbar */
+.slideUp { 
+	top:-100px;
+}
+
+.headroom { 
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out; 
+	-o-transition: all 0.4s ease-out; 
+	transition: all 0.4s ease-out; 
+}
+
+/* Highlights (in jumbotron in most cases) */
+.highlight { 
+	margin-top:40px; 
+}
+
+.h-caption { 
+	text-align: center; 
+
+	& img{
+		margin: 5px 0;
+	}
+}
+
+.h-body { 
+	text-align: center;
+
+	& p{
+		font-size: 12px;
+	}
+
+}
+
+
+
+/* TOP page */
+.main-copy-base {
+	background-color: rgba(255,255,255,0.9);;
+	height: 80px;
+	display: block;
+	position: relative;
+	margin-top: -80px;
+
+	& h2 {
+		color: $main-color;
+		font-size: 13px;
+		line-height: 2em;
+	}
+}
+
+.main-info-base {
+	background-color: $main-color;
+	overflow-x: hidden;
+	display: relative;
+	margin: auto;
+}
+
+.sub-base {
+	background-color: $sub-color;
+	padding: 20px 0;
+}
+
+
+
+/* button */
+.btn-infomation {
+	color: white;
+	background-color: $main-color;
+	border-color : white;
+	border-radius: 0;
+	padding: 15px 20px;
+	font-size: 12px;
+	margin: 5px 0;
+
+	&:hover{
+		background-color: rgba(255,255,255,0.2);
+		color: white;	
+	}
+
+}
+
+

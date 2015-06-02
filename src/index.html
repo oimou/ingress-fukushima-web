@@ -23,7 +23,7 @@
     このページのタイトルを入れるブロック(optional)
 #}
 {% block title %}
-    <title>タイトルが入ります</title>
+    <title> Ingress Mission Day In Tohoku Fukushima</title>
 {% endblock %}
 
 
@@ -32,12 +32,122 @@
     このページのコンテンツを入れるブロック(optional)
 #}
 {% block body %}
-    <div class="container">
-        <h1>ダミーテキストが入ります</h1>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/img-logo.png" alt="Ingress Mission Day In Tohoku Fukushima"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Mission</a>
+                    </li>
+                    <li><a href="contact.html">Access</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">地域別<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">会津若松</a></li>
+                            <li class="active"><a href="s">郡山</a></li>
+                        </ul>
+                    </li>
 
-        <p>
-            ダミーテキストが入ります。
-            <a href="sub">下層ページ</a>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div> 
+    <!-- /.navbar -->
+
+    <!-- Header -->
+    <header id="head">
+        <div class="container">
+             
+            
+        </div>
+    </header>
+
+    <div class="container main-copy-base text-center">
+        <h2>
+            The Fukushima around you is not what it seems.<br>
+            あなたの周りの福島は、見たままのものとは限らない
+        </h2>
+    </div>
+    <!-- /Header -->
+
+
+
+
+    <div class="container main-info-base text-center">
+       <p>
+          <button type="button" class="btn btn-infomation">Google + イベントページはこちら</button>
+          <button type="button" class="btn btn-infomation">Ingress Cross-Faction Community Fukushima</button>
         </p>
     </div>
+
+    <div class="container text-center sub-base">
+        <h3>Ingress Mission Day in Fukushima へようこそ!</h3>
+
+        <p>
+            「Ingress Mission Day in Tohoku Fukushima」は、2015年6月21日 (日) に福島県で開催される公式イベントです。<br>
+            舞台は、いわき市、福島市、郡山市、白河市、会津若松&喜多方の計5か所。<br>
+            福島県内の指定ミッションを 3 つ以上クリアすると、Mission Day のアチーブメントメダルがもらえます。<br>
+            Ingress をしながら、観光しながら、美味しいものを食べながら、福島を楽しもう!
+        </p>
+    </div>
+
+    <div class="container text-center">
+        <h3>Mission Day in Fukushimaの流れ</h3>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="h-caption">
+                    <img src="img/img-num-1.png"><br>
+                </div>            
+                <div class="h-caption">
+                    <img src="img/img-shape.png">
+                </div>
+                <div class="h-body">
+                    <h4>6/21にいずれかの開催年を訪れる</h4>
+                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>                          
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="h-caption">
+                    <img src="img/img-num-2.png">
+                </div>            
+                <div class="h-caption">
+                    <img src="img/img-shape.png">
+                </div>
+                <div class="h-body">
+                    <h4>指定Missionを3つ以上クリアする</h4>
+                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>              
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="h-caption">
+                    <img src="img/img-num-3.png">
+                </div>            
+                <div class="h-caption">
+                    <img src="img/img-shape.png">
+                </div>
+                <div class="h-body">
+                    <h4>受付でメダルのパスコードをゲット！</h4>
+                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>  
+            </div>
+        </div>
+
+    </div>
+
 {% endblock %}
